@@ -20,7 +20,7 @@ Example:
    std::cout << sem.value() << std::endl;
    
    sem.wait_for(500ms); // C++14
-   sem.wait_for(std::chrono::system_clock::now() + 5s); // C++14
+   sem.wait_until(std::chrono::system_clock::now() + 5s); // C++14
 
    
 Build
